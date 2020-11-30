@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  width: 100%;
+}
+
+.header__icon {
+  object-fit: contain;
+  height: 100px;
+  margin-left: 80px;
+}
+
+/* you have to treat every single container with its own rules */
+
+.header__center {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  max-width: fit-content;
+  /* this line make the search bar go into the center!! */
+  border: 1px solid lightgray;
+  border-radius: 999px;
+  padding: 10px;
+  height: 30px;
+}
+
+.header__center > input {
+  border: none;
+  /* width: 250px; */
+  padding: 10px;
+  outline-width: 0;
+  /* this is important !! */
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 15vw;
+  margin-right: 80px;
+}
